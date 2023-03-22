@@ -34,15 +34,57 @@ nav {
 	/*justify-content: center;
 	justify-content: space-between;*/	
 }
+.maincnt{
+	color: #B0C8BE;
+	
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
-.navcon{
+.card{
 	background-color: #3A785D;
 	font-size: 2vw;
 	flex: 1 0 250px;
-}
 
+	color: #B0C8BE;
+	text-decoration: none;
+	background-color: #5B9079;
+	border-radius: 1vw;
+	margin-top: 2em;
+    margin-left: .5em;
+    margin-right: .5em;
+    text-align: center;
+    word-wrap: break-word;
+}
+.card img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 1vw;
+}
+/*
+#image{
+	flex: 1 0 250px;
+	border-radius: 1vw;
+	background-color: #DEE7E3
+
+
+}
+*/
 h1{
+	margin-left: .5em;
+    margin-right: .5em;
+	font-size: 4vw;
+    text-align: center;
+    font-family: monotonregular;
+    text-decoration: none;
+
+}
+h2{
+	margin-left: .5em;
+    margin-right: .5em;
 	font-size: 3vw;
     text-align: center;
     font-family: monotonregular;
@@ -60,19 +102,68 @@ a{
     margin-right: .5em;
     text-align: center;
     word-wrap: break-word;
+    transition: background-color 1.5s;
 }
 
 p{
-	font-size: 1.5vw;
+	font-size: 1vw;
 	font-family: monospace;
 	margin-left: .5em;
     margin-right: .5em;
     text-align: center;
 }
 
-p:hover{
-    animation: breathe 4s infinite;
+.responsive{
+	/*object-fit: contain;*/
+	height: 100%;
+  width: 100%;
+  object-fit: cover;
+	/*
+	max-height: 100%;
+	width: auto;
+	*/
+}
+
+@media (max-width: 666px) {
+  .maincnt {
+    flex-direction: column;
+  }
+  nav{
+  	flex-direction: column;
+  }
+  p{
+  	font-size: 3vw;
+  }
+  h1{
+  	font-size: 5vw;
+  }
+  h2{
+  	font-size: 4vw;
+  }
+}
+
+@media (min-width: 667px) and (max-width: 1300px) {
+  .maincnt {
+    flex-direction: column;
+  }
+  p{
+  	font-size: 2vw;
+  }
+  h1{
+  	font-size: 4vw;
+  }
+  h2{
+  	font-size: 3vw;
+  }
+}
+
+a:hover {
+  background-color: #3A785D;
+}
+
+a:hover{
+    animation: breathe 1.5s infinite;
 }
 @keyframes breathe {
-    50% {box-shadow: 0px 0px 20px 3px var(--highlight_color);}
+    50% {box-shadow: 0px 0px 20px 3px #3A785D;}
 }
