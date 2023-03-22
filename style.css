@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'monotonregular';
+    src: url('monoton-regular-webfont.woff2') format('woff2'),
+         url('monoton-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	background-color: #DEE7E3;
+}
+header{
+	color: #3A785D;
+	font-size: 5vw;
+	font-family: monotonregular;
+	text-align: center;
+}
+
+nav {
+	color: #B0C8BE;
+	
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*
+	display: flex;
+	border-radius: 1vw;
+	align-items: stretch;
+	/*flex-wrap: wrap;
+	/*background-color: #3A785D;*/
+	/*justify-content: space-evenly;*/
+	
+	/*justify-content: center;
+	justify-content: space-between;*/	
+}
+
+
+.navcon{
+	background-color: #3A785D;
+	font-size: 2vw;
+	flex: 1 0 250px;
+}
+
+h1{
+	font-size: 3vw;
+    text-align: center;
+    font-family: monotonregular;
+    text-decoration: none;
+
+}
+
+a{
+	color: #B0C8BE;
+	text-decoration: none;
+	background-color: #5B9079;
+	border-radius: 1vw;
+	margin-top: 2em;
+    margin-left: .5em;
+    margin-right: .5em;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+p{
+	font-size: 1.5vw;
+	font-family: monospace;
+	margin-left: .5em;
+    margin-right: .5em;
+    text-align: center;
+}
+
+p:hover{
+    animation: breathe 4s infinite;
+}
+@keyframes breathe {
+    50% {box-shadow: 0px 0px 20px 3px var(--highlight_color);}
+}
