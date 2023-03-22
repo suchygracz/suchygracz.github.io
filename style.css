@@ -34,6 +34,7 @@ nav {
 	/*justify-content: center;
 	justify-content: space-between;*/	
 }
+
 .maincnt{
 	color: #B0C8BE;
 	
@@ -58,12 +59,32 @@ nav {
     text-align: center;
     word-wrap: break-word;
 }
+
+
+.card pre{
+	left: 50px;
+	text-align: left;
+}
+
 .card img{
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 	border-radius: 1vw;
 }
+
+.card img {
+	-webkit-filter: blur(10px);
+
+	-webkit-transition: .8s ease-in-out;
+	transition: .8s ease-in-out;
+}
+
+.card:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
 
 
 /*

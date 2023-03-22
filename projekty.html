@@ -16,14 +16,36 @@
 	<!--<div class="card">
 		<h1>Moje projekty:</h1>
 	</div>-->
-		<div class="card">
+		<div class="card" id="code">
 			<h2> Checkers:</h2>
 				<p>Implementacja w Javie klasycznej gry w warcaby, umożliwiająca rozgrywkę międy dwoma graczami</p>
+				<pre>
+					<code>
+		public void handle(MouseEvent mouseEvent) 
+		{
+		    checkerG = (CheckerG) mouseEvent.getSource();
+
+    		if (mouseEvent.getEventType() == MouseEvent.MOUSE_RELEASED) 
+		       {
+		        try 
+	        	    {
+	    	            moveChecker(mouseEvent);
+		            }
+		            catch (IOException e) 
+	            	{
+	        	        throw new RuntimeException(e);
+	    	        }
+		        }
+		}
+    				</code>
+    			</pre>
 		</div>
+
 		<div class="card">
 			<h2>Portfolio:</h2>
 				<p>Strona internetowa (tak ta strona internetowa) prezentująca podstawowe informacje o mnie oraz przedstawiająca moje dotychczasowe dokonania</p>
 		</div>
+
 		<div class="card">
 			<h2>wizualizacja konceptów matematycznych:</h2>
 				<p>Listy zadań realizowane w ramach przedmiotu Metody Probabilistyczne i Statystyka, ukazujące w postaci wykresów różne koncepty matematyczne takie jak gęstość funkcji, czy też problem koszyków</p>
