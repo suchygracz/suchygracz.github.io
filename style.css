@@ -17,22 +17,14 @@ header{
 	text-align: center;
 }
 
+
+
 nav {
 	color: #B0C8BE;
 	
 	display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /*
-	display: flex;
-	border-radius: 1vw;
-	align-items: stretch;
-	/*flex-wrap: wrap;
-	/*background-color: #3A785D;*/
-	/*justify-content: space-evenly;*/
-	
-	/*justify-content: center;
-	justify-content: space-between;*/	
+    justify-content: space-between;	
 }
 
 .maincnt{
@@ -57,13 +49,17 @@ nav {
     margin-left: .5em;
     margin-right: .5em;
     text-align: center;
-    word-wrap: break-word;
+    /*word-wrap: break-word;*/
 }
 
 
 .card pre{
 	left: 50px;
 	text-align: left;
+	margin-left: 10vw;
+	overflow: auto !important;
+	font-size: 2vw; 
+	display: flex;
 }
 
 .card img{

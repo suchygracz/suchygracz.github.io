@@ -20,24 +20,24 @@
 			<h2> Checkers:</h2>
 				<p>Implementacja w Javie klasycznej gry w warcaby, umożliwiająca rozgrywkę międy dwoma graczami</p>
 				<pre>
-					<code>
-		public void handle(MouseEvent mouseEvent) 
-		{
-		    checkerG = (CheckerG) mouseEvent.getSource();
+					
+public void handle(MouseEvent mouseEvent) 
+{
+    checkerG = (CheckerG) mouseEvent.getSource();
 
-    		if (mouseEvent.getEventType() == MouseEvent.MOUSE_RELEASED) 
-		       {
-		        try 
-	        	    {
-	    	            moveChecker(mouseEvent);
-		            }
-		            catch (IOException e) 
-	            	{
-	        	        throw new RuntimeException(e);
-	    	        }
-		        }
+   	if (mouseEvent.getEventType() == MouseEvent.MOUSE_RELEASED) 
+        {
+        	try 
+        	{
+		    moveChecker(mouseEvent);
+			}
+			catch (IOException e) 
+	        {
+	        	throw new RuntimeException(e);
+	    	}
 		}
-    				</code>
+	}
+    				
     			</pre>
 		</div>
 
